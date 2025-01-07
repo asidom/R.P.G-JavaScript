@@ -1,0 +1,156 @@
+@media (max-width: 768px) { 
+    
+    body {
+      width: 90%; 
+    }
+
+    #password-generator, #dice, h1 { 
+      position: relative; 
+      margin: 10px auto; 
+    }
+  }  
+  body{
+    background: linear-gradient(
+      teal,
+      lightseagreen,
+      white
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h1 {
+    position: relative; 
+    top: 0%; 
+    text-align:  center;
+    color: black;
+  }
+  
+  #password-generator {
+    background-color:seashell;
+    border: 5px solid darkslategrey;
+    width: 400px;
+    height: 190px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    top: 7%;
+    
+    position: fixed; 
+  }
+  
+  #dice {
+    background-color:seashell;
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    bottom: 1%;
+    
+    position: fixed; 
+   
+  }
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(5px, 5px); }
+    10% { transform: translate(-5px, -10px); }
+    20% { transform: translate(10px, 10px); }
+    30% { transform: translate(-10px, 5px); }
+    40% { transform: translate(10px, -5px); }
+    50% { transform: translate(-5px, 10px); }
+    60% { transform: translate(5px, -10px); }
+    70% { transform: translate(10px, 5px); }
+    80% { transform: translate(-10px, -5px); }
+    90% { transform: translate(5px, 10px); }
+    100% { transform: translate(0, 0); }
+  }
+
+.dot1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display:grid;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.dot2{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display:grid;
+    margin-left: 250px;
+    margin-top: 65px;
+}
+
+#password {
+    display: grid;
+    grid-template-columns: auto min-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+#result {
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    
+}
+
+#copy-button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 175px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#password-length {
+    width: 90%;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#options label {
+    display: block;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#generate-button {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 175px;
+    height: 50px;
+    font-size: 1em;
+    cursor: pointer;
+}
